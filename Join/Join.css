@@ -1,0 +1,174 @@
+.sidebar{
+    display: block;
+}
+
+body{
+    margin: 0;
+    font-family: "Lato",sans-serif;
+}
+
+.sidebar{
+    margin: 0;
+    padding: 0;
+    width: 330px;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    background: url(/Image/night-man-alone-starry-sky-night-sky-comet-silhouette-3840x2160-8325.jpg);
+    color: white;
+    background-repeat: no-repeat;
+}
+
+div.content{
+    margin-left: 340px;
+    padding: 16px 6px;
+}
+
+.margin{
+    margin-top: 300px;
+}
+
+@media screen and (max-width: 700px) {
+    .sidebar{
+        width: 100%;
+        height: auto;
+        position: relative;        
+    }
+
+    div.content{
+        margin-left: 0;
+    }
+    .margin{
+        margin-top: 40px;
+    }
+    .btn-main{
+        display: inline;
+    }
+    .btn-main2{
+        display: none;
+    }
+    .head{
+        margin-top: 30px;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .btn-main2{
+        display: inline;
+    }
+    .btn-main{
+        display: none;
+    }
+    .head{
+        margin-top: 60px;
+    }
+}
+
+.first{
+    display: flex;
+    flex-direction: row;
+    gap: 18px;
+    width: 100%;
+}
+
+.form{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+#email-2{
+    width: 100%;
+}
+
+.robot{
+    padding: 15px;
+    border: 2px solid gray;
+    background-color: lightgray;
+    width: 100%;
+    border-radius: 6px;
+    color: black;
+}
+
+#robot{
+    cursor: pointer;
+}
+
+.btn-one{
+    background-color: black;
+    color: aliceblue;
+    border: 2px solid rebeccapurple;
+    border-radius: 6px;
+}
+
+#span{
+    color: gray;
+    font-size: 14px;
+}
+
+#head1{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+#head2{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 32px;
+    font-weight: 500;
+}
+
+#first,#last,#email-2,#user,#pass,#email,#pwd{
+    border: 1px solid black;
+    border-radius: 18px;
+}
+
+#welcome-login{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.social{
+    display: grid;
+    gap: 8px;
+}
+
+.btn-1{
+    border-radius: 20px;
+}
+
+#or{
+    color: gray;
+    padding: 8px;
+}
+
+.btn-2{
+    width: 100%;
+    padding: 8px;
+    background-color: black;
+    color: aliceblue;
+    border-radius: 18px;   
+    border: 1px solid violet; 
+}
+::-webkit-scrollbar{
+    display: none;
+}
+#sign-p{
+    font-size: 14px;
+}
+#sign{
+    text-decoration: none;
+    font-size: 16px;
+}
+
+#forgot{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+#other{
+    font-size: 15px;
+    color: gray;
+}

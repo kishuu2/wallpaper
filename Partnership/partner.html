@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awsome Wallpaper</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="/Main Style/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="shortcut icon"
+        href="https://static.vecteezy.com/system/resources/previews/001/198/238/large_2x/diamond-png.png"
+        type="image/x-icon">
+    <script src="/Main javascript/javacript.js"></script>
+
+    <style>
+        ::-webkit-scrollbar{
+            display: none;
+        }
+        #partner-one {
+            font-size: 38px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: 500;
+        }
+
+        #p-one {
+            font-size: 18px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .left {
+            padding: 5em;
+        }
+
+        #first-li {
+            font-size: 16px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: 500;
+            color: gray;
+        }
+
+
+        .image2 {
+            background-position: 100% 100%;
+            background-attachment: fixed;
+        }
+
+        @media screen and (max-width: 775px) {
+            #second-de {
+                display: none;
+            }
+
+            .right {
+                display: none;
+            }
+
+            .left {
+                padding: 10px;
+            }
+
+            #p-one {
+                font-size: 14px;
+                text-align: justify;
+            }
+
+            .image3 {
+                height: 100px;
+            }
+
+
+            #show-1 {
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                color: gray;
+                font-size: 16px;
+            }
+
+            #one1 {
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-size: 14px;
+            }
+
+        }
+
+
+        @media screen and (max-width: 800px) {
+            .second-div {
+                padding: 0px;
+            }
+
+        }
+
+        @media screen and (min-width: 800px) {
+            .second-in {
+                display: flex;
+                gap: 8px;
+            }
+        }
+
+        .profile-in {
+            display: flex;
+            gap: 16px;
+        }
+
+        #image2,
+        .image2 {
+            border-radius: 50%;
+        }
+
+        .image3 {
+            height: 250px;
+        }
+
+        #one {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 16px;
+            text-align: justify;
+        }
+
+        .showing {
+            display: flex;
+            gap: 24px;
+        }
+
+        #show-1 {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: gray;
+            font-size: 18px;
+        }
+
+        #one1 {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 16px;
+        }
+
+        .second-image {
+            display: flex;
+            flex-direction: row;
+            gap: 8px;
+        }
+
+        .contt {
+            display: flex;
+            gap: 10px;
+        }
+
+        .image3 {
+            border-radius: 18px 18px 0px 0px;
+            cursor: pointer;
+            transition: .3s all ease;
+        }
+
+        .image3:hover {
+            transition: .3s all ease;
+            transform: scale(1.02);
+            border-radius: 18px;
+        }
+
+        .image4 {
+            border-radius: 0px 0px 0px 18px;
+            cursor: pointer;
+            transition: .3s all ease;
+        }
+
+        .image4:hover {
+            transition: .3s all ease;
+            transform: scale(1.02);
+            border-radius: 18px;
+        }
+
+        .image5 {
+            border-radius: 0px 0px 18px 0px;
+            cursor: pointer;
+            transition: .3s all ease;
+        }
+
+        .image5:hover {
+            transition: .3s all ease;
+            transform: scale(1.02);
+            border-radius: 18px;
+        }
+
+        .imge {
+            display: grid;
+            gap: 8px;
+            border: 2px solid gray;
+            padding: 8px;
+            border-radius: 18px;
+            box-shadow: 0 0 4px lightblue, 0 0 8px violet;
+
+        }
+
+        #click,
+        #click1 {
+            cursor: pointer;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 16px;
+            color: blue;
+        }
+
+        #user {
+            font-size: 18px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .second-div {
+            display: inline;
+            padding: 50px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #left{
+            display: flex;
+            gap: 6px;
+            border: 1px solid gray;
+            border-radius: 40px;
+            padding: 6px;
+            text-align: center;
+            align-items: center;
+        }
+        .logo{
+            display: flex;
+            gap: 9px;
+            border: 1px solid gray;
+            border-radius: 10px;
+            padding: 6px;
+            color: black;
+            background-color: lightgray;
+        }
+
+        .idea{
+            text-align: center;
+            padding: 18px;
+            border: 1px solid gray;
+            border-radius: 8px;
+            background-color: lightgray;
+        }
+
+        .btn-8{
+            border-radius: 8px;
+            background-color:darkgreen;
+            color: aliceblue;
+            padding: 8px;
+            text-decoration: none;
+            transition: .3s all ease;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .btn-8:hover{
+            box-shadow: 0 0 4px violet, 0 0 8px green;
+            transition: .3s all ease;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="offcanvas offcanvas-end upper-in" id="demo" style="transition: all .3s ease-in-out;">
+        <div class="offcanvas-header upper-in">
+            <h3 class="offcanvas-title">Welcome !</h3>
+            <button type="button" class="btn-close p-2 " id="btn9" data-bs-dismiss="offcanvas"></button>
+        </div>
+        
+        <div class="offcanvas-body upper-in">
+            <a href="/Awsome/Awsome.html" class="nav-link">Home</a>
+            <br>
+            <a href="/Join/Join.html" class="nav-link">Join</a>
+            <br>
+            <a href="/Report/report.html" class="nav-link">Report Content</a>
+            <br>
+            <a href="/Partnership/partner.html" class="nav-link text-primary">Partnership</a>
+            <br>
+            <a href="/Imprint/imprint.html" class="nav-link">imprint & terms</a>
+            <br>
+            <div class="d-flex log">
+                <button type="button" class="btn btn-outline-primary me-2" id="-a0" data-bs-toggle="modal"
+                    data-bs-target="#myModal"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                        fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                        <path fill-rule="evenodd"
+                            d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+                    </svg> &nbsp;
+                    Log in
+                </button>
+            </div>
+
+            <br>
+
+            <div class="theme d-flex">
+                <button class="btn btn-outline-primary me-2 dark1" id="light"><svg xmlns="http://www.w3.org/2000/svg"
+                        width="20" height="20" fill="currentColor" class="bi bi-lightbulb" viewBox="0 0 16 16">
+                        <path
+                            d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13a.5.5 0 0 1 0 1 .5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1 0-1 .5.5 0 0 1 0-1 .5.5 0 0 1-.46-.302l-.761-1.77a2 2 0 0 0-.453-.618A5.98 5.98 0 0 1 2 6m6-5a5 5 0 0 0-3.479 8.592c.263.254.514.564.676.941L5.83 12h4.342l.632-1.467c.162-.377.413-.687.676-.941A5 5 0 0 0 8 1" />
+                    </svg><span id="change">Dark</span> Mode</button>
+            </div>
+            <br><br><br>
+            <hr width="100%" size="2">
+
+            <div class="socials">
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                    class="bi bi-facebook" viewBox="0 0 16 16">
+                    <path
+                        d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                </svg>
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                    class="bi bi-twitter-x" viewBox="0 0 16 16">
+                    <path
+                        d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
+                </svg>
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                    class="bi bi-instagram" viewBox="0 0 16 16">
+                    <path
+                        d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                </svg>
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                    class="bi bi-pinterest" viewBox="0 0 16 16">
+                    <path
+                        d="M8 0a8 8 0 0 0-2.915 15.452c-.07-.633-.134-1.606.027-2.297.146-.625.938-3.977.938-3.977s-.239-.479-.239-1.187c0-1.113.645-1.943 1.448-1.943.682 0 1.012.512 1.012 1.127 0 .686-.437 1.712-.663 2.663-.188.796.4 1.446 1.185 1.446 1.422 0 2.515-1.5 2.515-3.664 0-1.915-1.377-3.254-3.342-3.254-2.276 0-3.612 1.707-3.612 3.471 0 .688.265 1.425.595 1.826a.24.24 0 0 1 .056.23c-.061.252-.196.796-.222.907-.035.146-.116.177-.268.107-1-.465-1.624-1.926-1.624-3.1 0-2.523 1.834-4.84 5.286-4.84 2.775 0 4.932 1.977 4.932 4.62 0 2.757-1.739 4.976-4.151 4.976-.811 0-1.573-.421-1.834-.919l-.498 1.902c-.181.695-.669 1.566-.995 2.097A8 8 0 1 0 8 0" />
+                </svg>
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-youtube"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z" />
+                </svg>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-sm" id="demo">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="javascript:void(0)"><img
+                    src="https://static.vecteezy.com/system/resources/previews/001/198/307/large_2x/diamond-png.png"
+                    alt="logo" width="40px"></a>
+
+            <form class="d-flex" autocomplete="on">
+                <button type="button" class="btn btn-outline-primary me-2" id="a0" data-bs-toggle="modal"
+                    data-bs-target="#myModal"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26"
+                        fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                        <path fill-rule="evenodd"
+                            d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+                    </svg> &nbsp;
+                    Log in
+                </button>
+
+                <button class="btn btn-outline-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                        class="bi bi-menu-down" viewBox="0 0 16 16" id="a0">
+                        <path
+                            d="M7.646.146a.5.5 0 0 1 .708 0L10.207 2H14a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h3.793zM1 7v3h14V7zm14-1V4a1 1 0 0 0-1-1h-3.793a1 1 0 0 1-.707-.293L8 1.207l-1.5 1.5A1 1 0 0 1 5.793 3H2a1 1 0 0 0-1 1v2zm0 5H1v2a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1zM2 4.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 0 1h-8a.5.5 0 0 1-.5-.5m0 4a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5m0 4a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                        class="bi bi-list" viewBox="0 0 16 16" id="a1">
+                        <path fill-rule="evenodd"
+                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                    </svg>
+                    <span id="a0">Main menu</span>
+                </button>
+            </form>
+        </div>
+
+    </nav>
+
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog modal-md-down">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header upper-in d-flex">
+                    <button type="button" class="btn btn-close p-2 btn-danger " id="btn9" data-bs-dismiss="modal">
+                    </button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body upper-in">
+                    <p id="welcome-login" class="text-center">Welcome Back</p>
+                    <div class="form">
+                        <div class="social">
+                            <button type="button" class="btn-1 btn btn-outline-danger"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                    class="bi bi-google" viewBox="0 0 16 16">
+                                    <path
+                                        d="M15.545 6.558a9.4 9.4 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.7 7.7 0 0 1 5.352 2.082l-2.284 2.284A4.35 4.35 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.8 4.8 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.7 3.7 0 0 0 1.599-2.431H8v-3.08z" />
+                                </svg> Log in with Google</button>
+
+                            <button type="button" class="btn-1 btn btn-outline-primary"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                    class="bi bi-facebook" viewBox="0 0 16 16">
+                                    <path
+                                        d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                                </svg> Log in with facebook</button>
+                        </div>
+
+
+                        <p id="or" class="text-center">Or</p>
+
+                        <form action="/Awsome/Awsome.html">
+                            <div class="mb-3">
+                                <input type="email" class="form-control" id="email" placeholder="E-mail or Username"
+                                    name="email">
+                            </div>
+                            <div class="mb-3">
+                                <input type="password" class="form-control" id="pwd" placeholder="Password" name="pswd">
+                            </div>
+                            <div class="form-check mb-3">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" id="robot" type="checkbox" name="remember"> Remember
+                                    me
+                                </label>
+                            </div>
+                            <button type="submit" class="btn-2">Log in</button>
+                            <br><br>
+                            <p id="sign-p">Not a member yet ? <a href="/Join/Join.html" id="sign">Sign
+                                    Up</a></p>
+
+                            <p><a href="/Forgot/Forgot.html" id="forgot">Forgot your password</a></p>
+
+                            <span class="text-center" id="other">By continuing, your agree to our <a href="/Imprint/imprint.html"
+                                    id="sign">User Terms</a> and to
+                                receive Awsome Email.</span>
+                            <br><br>
+                            <span class="text-center" id="other">You can update your email preferences anytime.</span>
+                        </form>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="cont">
+        <div class="one p-2">
+            <div class="row" style="width: 100%;">
+                <div class="col-md-6 left">
+                    <h2 id="partner-one">Partnership with Awsome</h2>
+                    <p id="p-one">We love teaming up with other brands. Here's How you can work with us.</p>
+                    <a href="mailto:chokwalakishan@gmail.com" class="btn-8">Get in touch</a>
+                    <br><br>
+                    <ul>
+                        <li id="first-li">Photographers in 170 different countries</li>
+                        <li id="first-li">15 Million Monthly Visits</li>
+                        <li id="first-li">Over 4 Billion monthly Image views</li>
+                    </ul>
+                </div>
+
+                <div class="col-md right">
+                    <img src="/Image/cozy-cabin-sunset-3840x2160-14443.jpg"
+                        class="img-fluid d-flex mx-auto rounded-5 image2" alt="Photo">
+                </div>
+            </div>
+        </div>
+        <div class="text-center">
+
+            <hr size="2" width="100%" color="gray">
+        </div>
+
+        <div class="brand p-2">
+            <div class="first">
+                <h3>Create a Branded Profile</h3>
+                <p id="p-one">Who doesn't love free marketing? Maximize the Visibillity and rech of your wholly owned
+                    imagery.
+                    with a branded profile on Pexels, content that you've already paid for can continue to gain exposure
+                    and visibillity with a global audience. Don't have any custom photography? Get in touch nd we can
+                    connect you to one of our selected Heroes to set up a shoot.
+                </p>
+            </div>
+
+            <div class="second">
+                <div class="second-in" style="width: 100%;">
+                    <div class="second-div">
+                        <div class="profile">
+                            <div class="profile-in">
+                                <div class="image2">
+                                    <img src="/Image/15554.jpg" alt="" width="90px" id="image2">
+                                </div>
+                                <div class="follow">
+                                    <span id="user">ELEVATE <br>
+                                        <p id="click" onclick="myfunction()">Follow</p>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <p id="one">
+                            Elevate is a purpose-driven initiate to create and inspire the brightest future possible for
+                            the beer industry.
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam ipsa non, quo ut iure atque
+                            autem, iste obcaecati hic ratione, rerum adipisci officia doloremque est debitis tempora
+                            laborum suscipit vero!
+                        </p>
+                        <br>
+                        <div class="showing">
+                            <span id="show-1">View <br>
+                                <p id="one1" class="text-center">411.2M</p>
+                            </span>
+                            <span id="show-1">Downloads <br>
+                                <p id="one1" class="text-center">1.1M</p>
+                            </span>
+                            <span id="show-1">Followers <br>
+                                <p id="one1" class="text-center">1.3K</p>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="second-image">
+                        <div class="imge">
+                            <img src="/Image/night-man-alone-starry-sky-night-sky-comet-silhouette-3840x2160-8325.jpg"
+                                class="img-fluid d-flex mx-auto image3" alt="Photo" width="100%">
+
+                            <div class="contt">
+                                <img src="/Image/16850.jpg" class="img-fluid d-flex mx-auto image4" alt="Photo"
+                                    width="50%">
+                                <img src="/Image/16925.jpg" class="img-fluid d-flex mx-auto image5" alt="Photo"
+                                    width="48%">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+                <div class="second-in" id="second-de" style="width: 100%;">
+                    <div class="col-md second-image">
+                        <div class="imge">
+                            <img src="/Image/pexels-photo-1438761.jpeg" class="img-fluid d-flex mx-auto image3"
+                                alt="Photo" width="100%">
+
+                            <div class="contt">
+                                <img src="/Image/20502413.jpg" class="img-fluid d-flex mx-auto image4" alt="Photo"
+                                    width="50%">
+                                <img src="/Image/16935.png" class="img-fluid d-flex mx-auto image5" alt="Photo"
+                                    width="48%">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md second-div">
+                        <div class="profile">
+                            <div class="profile-in">
+                                <div class="image2">
+                                    <img src="/Image/16935.png" alt="" width="90px" id="image2">
+                                </div>
+                                <div class="follow">
+                                    <span id="user">Linkdin Sales Navigator<br>
+                                        <p id="click1" onclick="myfunction2()">Follow</p>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <p id="one">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam ipsa non, quo ut iure atque
+                            autem, iste obcaecati hic ratione, rerum adipisci officia doloremque est debitis tempora
+                            laborum suscipit vero! Elevate is a purpose-driven initiate to create and inspire the
+                            brightest future possible for
+                            the beer industry.
+                        </p>
+                        <br>
+                        <div class="showing">
+                            <span id="show-1">View <br>
+                                <p id="one1" class="text-center">401.2M</p>
+                            </span>
+                            <span id="show-1">Downloads <br>
+                                <p id="one1" class="text-center">1.2M</p>
+                            </span>
+                            <span id="show-1">Followers <br>
+                                <p id="one1" class="text-center">1.5K</p>
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+                <br>
+                <p id="show-1">Let other do the advertising for you. Awsome Photos from Linkedin and Elevate are used on
+                    more than 25,000 web pages:</p>
+
+                <img src="/Image/partner1.jpg" alt="Brands" width="100%" class="img-fluid mx-auto d-flex">
+                <br>
+                <hr size="2" color="gray">
+            </div>
+
+            <div class="others">
+                <div class="first-other">
+                    <h3>Back a Photo or Video Challenge</h3>
+                    <p id="one">Who doesn't love a challenge? Especially when competing for cash. prizes or awsome
+                        esperiences. Sponsor a challenge, get your brand noticed and challenge our users to flex their
+                        creative muscles.</p>         
+                </div>
+
+                <div class="second-in" style="width: 100%;">
+                    <div class="second-image">
+                        <div class="imge">
+                            <img src="/Image/challenge2.jpg"
+                                class="img-fluid d-flex mx-auto image3" alt="Photo" width="100%">
+
+                            <div class="contt">
+                                <img src="/Image/challenge.jpg" class="img-fluid d-flex mx-auto image4" alt="Photo"
+                                    width="50%">
+                                <img src="/Image/challenge1.jpg" class="img-fluid d-flex mx-auto image5" alt="Photo"
+                                    width="48%">
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="second-div">
+                        <div id="left">
+                              <div class="spinner-grow spinner-grow-sm text-danger"></div>
+                              <span id="one">18 days left</span>  
+                        </div>
+                        <br>
+                        <p>
+                            Supported by International Fund of Nature Welfare
+                        </p>
+                        <h4>Awsome For Change: Our Nature World</h4>
+                        
+                        <br>
+                        <div>
+                            <p>Your photos can have the power to make a difference to the lives of Nature all over the World</p>
+                            
+                                <div class="logo">
+                                    <img src="https://static.vecteezy.com/system/resources/previews/001/198/238/large_2x/diamond-png.png" class="img-fluid d-flex" width="30px" height="30px" alt="logo">
+                                    <div class="text" >
+                                       <span>Prize</span><br>
+                                       <span>$300 USD in Cash Prizes</span>
+                                    </div>
+                                </div>
+                            
+                        </div>
+                        <br>
+                        <div class="buttons">
+                            <button class="btn-2">Join the Challenge</button>
+                        </div>
+                    </div>
+
+                    
+
+                </div>
+
+                <hr size="2" color="gray">
+            </div>
+            <br>
+            <div class="idea">
+                <h2 style="color: black;">Pitch Your Own Idea</h2>
+                <p id="show-1">Who doesn't love a custom Partnership that's mutully beneficial? get in touch and tell us what you're looking for.</p>
+                <a href="mailto:chokwalakishan@gmail.com" class="btn-8">Get in touch</a>
+            </div>
+
+        </div>
+
+    </div>
+    <br><br>
+
+    <section class="">
+        <!-- Footer -->
+        <footer class="text-center text-white" style="background-color: #0a4275;">
+            <!-- Grid container -->
+            <div class="container p-4 pb-0">
+                <!-- Section: CTA -->
+                <section class="">
+                    <p class="d-flex justify-content-center align-items-center">
+                        <span class="me-3">Register for free</span>
+                        <a href="/Join/Join.html" data-mdb-ripple-init type="button"
+                            class="btn btn-outline-light btn-rounded">
+                            Sign up!
+                        </a>
+                    </p>
+                </section>
+                <!-- Section: CTA -->
+            </div>
+            <!-- Grid container -->
+
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                © 2020 Copyright:
+                <a class="text-white" href="https://mdbootstrap.com/">Diamond Developer</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
+    </section>
+    <script>
+        function myfunction() {
+            /*document.getElementById("click").innerHTML = "Following"
+            document.getElementById("click").style.color = "blue"*/
+
+            let btn = document.getElementById("click");
+
+            if (btn.innerText === "Follow") {
+                btn.innerText = 'Following';
+                btn.style.color = "green";
+            }
+            else {
+                btn.innerText = "Follow";
+                btn.style.color = "blue";
+            }
+
+        }
+
+        function myfunction2() {
+            let btn2 = document.getElementById("click1");
+            if (btn2.innerText === "Follow") {
+                btn2.innerText = 'Following';
+                btn2.style.color = "green";
+            }
+            else {
+                btn2.innerText = "Follow";
+                btn2.style.color = "blue";
+            }
+        }
+
+
+    </script>
+</body>
+
+</html>
